@@ -46,13 +46,13 @@ export default function MenuItemCard({itemData})
             <p className="mt-[12px] line-clamp-2">{itemData?.description}</p>
          </div>
          <div className="w-[20%] flex flex-col items-center justify-end relative transition-all duration-300 ease-in-out">
-            <img className="w-full h-36 object-cover rounded-3xl mb-2" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/"+itemData.imageId} alt="" />
+            <img className="w-full h-40 object-cover rounded-3xl mb-2" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/"+itemData.imageId} alt="" />
             {
                itemCount===0?(<button className="hover:cursor-pointer font-bold absolute left-1/2 -translate-x-1/2 bottom-[-14px] text-[#FF3C38] px-7 py-2 bg-white rounded-xl border border-[#FF3C38] shadow-[0_8px_30px_rgba(0,0,0,0.3)] w-1/2 text-l" onClick={handleAddItems}>ADD</button>):(
-                  <div className="flex items-center justify-between gap-3 Rubik  font-bold absolute left-1/2 -translate-x-1/2 bottom-[-14px] py-2 bg-white rounded-xl border border-[#FF3C38] shadow-[0_8px_30px_rgba(0,0,0,0.3)] text-l w-1/2">
-                     <button className="text-xl px-3 hover:cursor-pointer hover:text-[#FF3C38]" onClick={handleDecrementItems}>-</button>
+                  <div className="flex items-center justify-between gap-2 Rubik  font-bold absolute left-1/2 -translate-x-1/2 bottom-[-14px] py-2 bg-white rounded-xl border border-[#FF3C38] shadow-[0_8px_30px_rgba(0,0,0,0.3)] text-l w-1/2">
+                     <button className="text-xl px-2 hover:cursor-pointer hover:text-[#FF3C38]" onClick={handleDecrementItems}>-</button>
                      <span className="">{itemCount}</span>
-                     <button className="text-xl px-3 hover:cursor-pointer hover:text-[#FF3C38]" onClick={handleIncrementItems}>+</button>
+                     <button className="text-xl px-2 hover:cursor-pointer hover:text-[#FF3C38]" onClick={handleIncrementItems}>+</button>
                   </div>
                )
             }
