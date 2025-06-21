@@ -8,7 +8,7 @@ export default function RestHeader()
    return(
       <div className="flex justify-between items-center px-45 py-3 shadow-md">
          <Link to={"/"} className="hover:cursor-pointer">  
-            <img className="w-14" src="../public/logo.png" alt="Cravya Logo" />
+            <img className="w-14" src="/logo.png" alt="Cravya Logo" />
          </Link>
          <div>
             <Link to={"/Checkout"}>

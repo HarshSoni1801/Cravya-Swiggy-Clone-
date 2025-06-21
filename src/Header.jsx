@@ -4,7 +4,7 @@ export default function Header()
    return(
       <header className="bg-[#FFD54F] Rubik">
          <div className="container mx-auto py-3 px-6 flex flex-col md:flex-row items-center justify-between">
-            <img className="w-30" src="../public/logo.png" alt="Cravya Logo" />
+            <img className="w-30" src="/logo.png" alt="Cravya Logo" />
             <div className="Roboto flex items-center text-base gap-10">
                <a href="https://www.swiggy.com/corporate/" target="_blank">Cravya Corporate</a>
                <a href="https://partner.swiggy.com/login#/swiggy" target="_blank">Cravya Corporate</a>
